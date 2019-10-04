@@ -51,6 +51,10 @@
                         </div>
                     </form>
                 </li>
+
+                <li sec:authorize="isAuthenticated()" class="nav-item">
+                    <span th:text="$user.name"></span>
+                </li>
             </ul>
         </div>
     </nav>
